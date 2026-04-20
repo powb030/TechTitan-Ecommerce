@@ -1,0 +1,30 @@
+/* ACTIVITY SOLUTION START */
+#banner-title {
+  font-family: 'Trebuchet MS', sans-serif;
+  font-weight: bolder;
+  font-size: 54px;
+}
+
+#motto {
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 1.7rem;
+}
+
+#banner {
+  background-size: cover;
+  background-position: center;
+  height: 550px;
+}
+
+/*  Global Dark Tech Background */
+body {
+  background: radial-gradient(circle at top, #0f2027, #203a43, #2c5364);
+  min-height: 100vh;
+  color: #e0e0e0;
+}
+
+/* Remove Bootstrap white background */
+.container {
+  background: transparent !important;
+}
+/* ACTIVITY SOLUTION END */
