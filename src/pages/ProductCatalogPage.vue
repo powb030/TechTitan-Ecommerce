@@ -51,7 +51,7 @@ async function addToCart(product) {
 async function fetchProducts() {
   try {
     state.loading = true;
-    const { data } = await api.get("/api/products/active");
+    const { data } = await api.get("/products/active");
     state.products = data.products || data;
   } catch (error) {
     notyf.error("Failed to load products");
@@ -63,7 +63,7 @@ async function fetchProducts() {
 async function viewProduct(productId) {
   try {
     state.loadingSingle = true;
-    const { data } = await api.get(`/api/products/${productId}`);
+    const { data } = await api.get(`/products/${productId}`);
     state.selectedProduct = data.product || data;
     await nextTick();
   } catch (error) {
